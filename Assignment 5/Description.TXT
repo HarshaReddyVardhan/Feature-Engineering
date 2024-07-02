@@ -1,0 +1,13 @@
+
+-->Failed to perform and visualize wavelet coefficient subbands - 5 
+visualized 3 levels of subbands
+
+- Reconstructed image using all subbands
+- Reconstructed image without LL Subband
+
+-->Failed to plot the detected corners to the wavelet reconstruction (without LL subband) - 15 points
+
+Detected and plotting corners on Image without LL subband using SIFT 
+
+Overall changes:
+Added code to visualize the subbands

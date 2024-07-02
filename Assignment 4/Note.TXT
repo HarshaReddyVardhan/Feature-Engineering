@@ -1,0 +1,9 @@
+Feedback
+Failed to remove the low-frequency - 15 points
+
+Changes made
+1. Changed the working of low frequency components removing filter.
+2. changed the spatial filter used for matching the reconstructed image.
+3. Removed extra visualizations.
+4. Added visualization after using the shift on fourier co-efficients
+
