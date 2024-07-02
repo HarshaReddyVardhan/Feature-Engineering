@@ -1,0 +1,31 @@
+function [precision, recall, f1_score] = findPrecisionRecallF1(predicted, groundTruth)
+    % Check if the input images have the same size
+    if ~isequal(size(groundTruth), size(predicted))
+        error('Images must be of the same size');
+    end
+
+    predicted = im2bw(predicted);
+    groundTruth = im2bw(groundTruth);
+
+    % Ensure that the input images are binary masks (0 or 1)
+    if ~all(ismember(unique(groundTruth), [0, 1])) || ~all(ismember(unique(predicted), [0, 1]))
+        error('Input images must be binary masks (0 or 1)');
+    end
+    
+    % Calculate true positives, false positives, and false negatives
+    true_positives = sum(groundTruth(:) == 1 & predicted(:) == 1);
+    false_positives = sum(groundTruth(:) == 0 & predicted(:) == 1);
+    false_negatives = sum(groundTruth(:) == 1 & predicted(:) == 0);
+
+    % Calculate precision, recall, and F1 score
+    precision = true_positives / (true_positives + false_positives);
+    recall = true_positives / (true_positives + false_negatives);
+    precision =precision * 100;
+    recall = recall *100;
+    % Handle the case where precision and recall are both zero
+    if precision + recall == 0
+        f1_score = 0;
+    else
+        f1_score = 2 * (precision * recall) / (precision + recall);
+    end
+end

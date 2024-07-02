@@ -1,0 +1,12 @@
+Description File
+
+Comments recieved - 
+Phongsiri Nirachornkul at Sat Sep 16, 2023 1:24pmat Sat Sep 16, 2023 1:24pm
+"-5: fail to use the provided template The method is vaguely described. The timeline should include outcomes."
+
+Changes Made -
+This file contains the changes made in the Group[15]_[09-14-2023] project proposal and plan document that was submitted earlier on September 14 2023.
+1.Method is discussed clearly.
+2.Evaluation methodology table has been included.
+3.Project timeline table is included which also contains the tasks of each team member.
+4.Expected project outcome is briefly discussed.
